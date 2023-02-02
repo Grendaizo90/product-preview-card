@@ -1,0 +1,120 @@
+/* @import url('https://fonts.google.com/specimen/Fraunces'); */
+/* @import url('https://fonts.google.com/specimen/Montserrat'); */
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('https: //fonts.googleapis.com/css2?family=Montserrat:wght@500;700');
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'Fraunces';
+    src: url('https: //fonts.googleapis.com/css2?family=Fraunces');
+    font-display: block;
+}
+
+body {
+    margin: 0 auto;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.container {
+    padding: 16px;
+    margin: auto;
+    min-width: 375px;
+    max-width: 500px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    display: flex;
+}
+
+img {
+    width: 100%
+}
+
+.image {
+    width: 50%;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+    background-size: 100%;
+    background-image: url('images/image-product-desktop.jpg');
+
+}
+
+.content {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.perfume {
+    font-family: 'Montserrat';
+    color: hsl(228, 12%, 48%);
+    font-weight: 700;
+    font-stretch: expanded;
+}
+
+.title {
+    font-family: 'Montserrat', serif;
+    font-weight: 700;
+}
+
+.description {
+    font-family: 'Montserrat';
+    color: hsl(228, 12%, 48%);
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.actual {
+    flex: 1;
+    /* font-family: 'serif', 'Fraunces'; */
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: hsl(158, 36%, 37%)
+}
+
+.prev {
+    flex: -1;
+    font-family: 'Montserrat';
+    font-size: x-small;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+
+.add {
+    padding-right: 36px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 48px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    background-color: hsl(158, 36%, 37%);
+    color: #fff;
+    font-weight: 600;
+    transition: all .15s;
+}
+
+.add:hover {
+    background-color: hsl(158, 44%, 28%);
+}
+
+.add:active {
+    background-color: hsl(156, 43%, 21%);
+}
+
+.icon-cart {
+    width: 12px;
+}
