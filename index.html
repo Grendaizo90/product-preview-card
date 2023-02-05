@@ -5,37 +5,40 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 		<link rel="stylesheet" href="style.css" />
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces" />
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat" />
+
 		<title>Frontend Mentor | Product preview card component</title>
 	</head>
 
 	<body>
-		<div class="container">
-			<div class="card">
-				<img class="image" src="images/image-product-desktop.jpg" alt="" />
-				<div class="content">
-					<div class="perfume">PERFUME</div>
-					<div class="title">Gabrielle Essence Eau De Parfum</div>
-					<div class="description">
+		<main>
+			<article class="product">
+				<picture class="product__img">
+					<source srcset="images/image-product-desktop.jpg" media="(min-width: 640px)" />
+					<img src="images/image-product-mobile.jpg" alt="" />
+				</picture>
+
+				<div class="product__content">
+					<p class="product__category">Perfume</p>
+					<h1 class="product__title">Gabrielle Essence Eau De Parfum</h1>
+
+					<p class="product__description">
 						A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for
 						the House of CHANEL.
-					</div>
-					<div class="price">
-						<span class="actual">$149.99</span>
-						<span class="prev">$169.99</span>
-					</div>
-					<button class="add">
-						<img class="icon-cart" src="images/icon-cart.svg" alt="" />
-						<p>Add to Cart</p>
-					</button>
-				</div>
-			</div>
-		</div>
+					</p>
 
-		<!-- <div class="attribution">
+					<div class="price">
+						<p class="product__actual-price">$149.99</p>
+						<p class="product__old-price">$169.99</p>
+					</div>
+
+					<button class="button" data-icon="shopping-cart">Add to Cart</button>
+				</div>
+			</article>
+
+			<!-- <div class="attribution">
 			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
 			Coded by <a href="#">Your Name Here</a>.
 		</div> -->
+		</main>
 	</body>
 </html>
