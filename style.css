@@ -22,6 +22,7 @@
 html,
 body {
 	height: 100%;
+	min-width: 375px;
 }
 
 body {
@@ -59,7 +60,6 @@ body {
 
 	display: grid;
 	place-content: center;
-	margin: 1rem;
 }
 
 /* utilities */
@@ -99,6 +99,11 @@ body {
 	height: 16px;
 }
 
+.container {
+	min-width: auto;
+	padding: auto;
+}
+
 /* product styles */
 
 .product {
@@ -109,13 +114,14 @@ body {
 	background-color: var(--white);
 	border-radius: 0.5rem;
 	overflow: hidden;
-	max-width: 600px;
+	max-width: 343px;
 }
 
 @media (min-width: 640px) {
 	.product {
 		--content-padding: 2rem;
 		grid-template-columns: 1fr 1fr;
+		max-width: 600px;
 	}
 }
 
